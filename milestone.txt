@@ -1,0 +1,60 @@
+CS193X Final Project Milestone
+==============================
+
+Project Title: Monster Hatchery
+Your Name: Alyssa Koh
+Your SUNetID: a9koh
+
+Overview
+--------
+I didn't complete everything on my milestone due to the end-of-quarter sprint!
+However, I have thought much on how to implement the rest of my project, and
+am confident on how to implement the Hatchery based on what I've learned from
+assignment 3 and on feedback I got on my proposal. Thanks Sam!
+
+For the basic rudimentary work I've done, just run `npm install` and `npm start`.
+Then, click on any of the buttons. A message should be sent to console.
+
+Project Changes
+---------------
+I mentioned in my proposal that I would be using the backend to keep track
+of time. I am no longer doing this; I will just be using the Date class in
+JavaScript to keep track of creation times. All timers displaying times will
+be handled in the frontend, and all changes in status for a Monster will be
+sent to the backend.
+
+From the feedback I got on my proposal, the changes in time will be calculated
+based on when a user logs on and off, and this will be updated properly in the
+backend api.
+
+Implementation Details
+----------------------
+I have currently written the HTML code for the Hatchery, including a template class
+depicting a single monster. I have also created an app.js file with prototypes for
+event handlers defined for the different buttons and forms on the Hatchery. These classes
+are barely implemented and are just in "debug mode" right now, meaning that clicking on
+any of the buttons should send a message to console indicating that they have been clicked.
+(e.g. clicking "Feed" will send "feed!" to console.)
+
+The aspects of my implementation that are left for the final deadline are:
+- Implementing a Monster class (handling duplication of template classes and their event handlers)
+- Implementing a User class
+- Implementing index.js for interacting with a Mongo database for the backend portion
+- Implementing Google authentication
+- Setting up an email account and a way for the website to send emails
+
+External libraries and code
+---------------------------
+I plan to use Google authentication to help create a saved state unique to each user and stored on
+the cloud. I have not yet achieved this.
+
+Collaboration and resources
+---------------------------
+I will likely be asking for a friend on help with Google authentication (this friend has already
+implemented Google auth into his own app, so I think his advice will be helpful). I will also likely be
+heavily asking ChatGPT for help on documentation as well as consulting friends in this class for help in
+integrating all front-end and back-end elements together.
+
+Anything else?
+--------------
+Nothing!

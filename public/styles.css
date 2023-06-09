@@ -1,0 +1,178 @@
+* {
+    font-family: "monaco", monospace;
+    background-color: rgb(30, 40, 50);
+}
+
+.template, .hidden, .beforehatch, .noneed {
+    display: none
+}
+
+h1 {
+    font-size: xx-large;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    left: 0;
+}
+
+h3 {
+    font-size: medium;
+}
+
+p {
+    font-size: smaller;
+}
+
+#monsterhatchery {
+    margin-left: 4rem;
+    color: white;
+}
+
+#welcome {
+    margin-left: 4rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+#logintypes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#namelogin {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: rgb(49, 71, 93);
+    width: 40%;
+}
+
+#namelogin *:not(button) {
+    background-color: inherit;
+}
+
+#googlelogin {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: rgb(49, 71, 93);
+    width: 40%;
+}
+
+#googlelogin * {
+    background-color: inherit;
+}
+
+#googleAuth {
+    margin: 1rem;
+}
+
+#loginForm {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#usernameinput, #nameinput {
+    border: 2px solid black;
+    border-radius: 4px;
+    color: white;
+}
+
+#toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: brown;
+}
+
+#toolbartitle {
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 4rem;
+    color: white;
+    background-color: inherit;
+}
+
+.tool_button {
+    height: 75%;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#meat {
+    color: white;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: inherit;
+}
+
+#nameForm {
+    background-color: inherit;
+    right: 0;
+    margin-left: 16rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#rostercontainer {
+    border-radius: 0.5rem;
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+    background-color: rgb(127, 149, 85);
+}
+
+#rostertitle {
+    margin-left: 4rem;
+    font-size: x-large;
+    background-color: inherit;
+}
+
+#roster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+}
+
+#rostertitle {
+    color: white;
+}
+
+.monster {
+    border-radius: 0.5rem;
+    width: 22%;
+    margin: 0.5rem;
+    position: relative;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: palegoldenrod;
+}
+
+.monster *:not(button) {
+    background-color: palegoldenrod;
+}
+
+button {
+    border-radius: 0.5rem;
+    background-color: bisque;
+    border-color: blue;
+}
+
+button:hover {
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgb(167, 119, 57);
+    border-color: red;
+}

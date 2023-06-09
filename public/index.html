@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title id="title">Monster Hatchery</title>
+
+    <!-- This line provides automatic page and style reloading when files change -->
+    <script type="module" src="/lib/client/updater.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://accounts.google.com/gsi/client" defer></script>
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="monsterhatchery" class="hidden">Monster Hatchery</h1>
+    </header>
+
+    <main id="welcome">
+      <h1>Welcome to the Monster Hatchery!</h1>
+      <div id="logintypes">
+        <div id="namelogin">
+          <h2>What's your name?</h2>
+          <body>
+            Make sure you use the same name when visiting the Hatchery
+            again so our staff can navigate you to the right one!
+          </body>
+          <form id="loginForm">
+            <input name="username" id="usernameinput" placeholder="Your name?">
+            <button type="submit" name="login">Visit your Hatchery!</button>
+          </form>
+        </div>
+        <div id="googlelogin">
+          <h2>For extra special monsters...</h2>
+          <body>
+            Checking in to the Hatchery this way will ensure that no one
+            else can tamper with your monsters!
+          </body>
+          <div id="googleAuth"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <main id="hatchery"> -->
+    <main id="hatchery" class="hidden">
+      <section class="column" id="toolbar">
+        <h2 class="columnTitle" id="toolbartitle">Toolbar</h2>
+        <button class="tool_button" id="summon">Summon monster egg</button>
+        <button class="tool_button" id="abandon">Abandon Hatchery and start a new one!</button>
+        <p id="meat"></p>
+        <form id="nameForm">
+          <input name="name" id="nameinput">
+          <button type="submit">Change name!</button>
+        </form>
+      </section>
+
+      <div id="rostercontainer">
+        <h2 class="columnTitle" id="rostertitle">Roster</h2>
+        <section class="column" id="roster"></section>
+      </div>
+    </main>
+
+    <!-- Template monster to be cloned in JavaScript -->
+    <article class="template monster">
+      <h3 class="eggName">[TEMPLATE: EGG NAME]</h3>
+      <p class="nexthatch">[TEMPLATE: EGG HATCH]</p>
+      <button class="hatch hidden">Hatch!</button>
+      <h3 class="name beforehatch">[TEMPLATE: MONSTER NAME]</h3>
+      <p class="satiety beforehatch">[TEMPLATE: MONSTER SATIETY LEVEL]</p>
+      <p class="flavor beforehatch">[TEMPLATE: MONSTER FLAVOR TEXT]</p>
+      <p class="nextevolve beforehatch">[TEMPLATE: MONSTER NEXT EVOLVE]</p>
+      <p class="haltstatus hidden beforehatch">Evolution is halted!</p>
+      <div class="buttons">
+        <button class="feed beforehatch">Feed</button>
+        <button class="release">Release</button>
+        <button class="halt beforehatch">Halt evolution!</button>
+        <button class="send hidden">Send</button>
+      </div>
+    </article>
+  </body>
+</html>
