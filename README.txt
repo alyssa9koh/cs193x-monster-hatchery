@@ -1,4 +1,9 @@
-Monster Hatchery
+CS193X Final Project
+====================
+
+Project Title: Monster Hatchery
+Your Name: Alyssa Koh
+Your SUNetID: a9koh
 
 Overview
 --------
@@ -6,6 +11,11 @@ Welcome to the Monster Hatchery!
 Here, you can summon Monster eggs. After some time, they will hatch into baby monsters.
 You can either feed, release, or halt evolution of these monsters. After enough time and
 enough food in their bellies, they will evolve!
+
+Running
+-------
+Simply run `npm install` and `npm start`.
+Do we need to load data from init_db.mongodb? Yes. This is just to initialize the correct collections.
 
 Features
 --------
@@ -35,3 +45,7 @@ I utilized the Google authentication guide posted on the project spec to impleme
 For monster_init_base.js from where the randomized monster names come from, I used
 this website (https://www.fantasynamegenerators.com/dragon-names.php) to help me generate names.
 Everything else in the project was created by me!
+
+Anything else?
+-------------
+Loved this course so much! Thank you Michael and Sam (for feedback on my proposal) and TAs!
