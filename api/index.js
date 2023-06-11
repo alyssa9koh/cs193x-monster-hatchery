@@ -6,7 +6,7 @@ import jwt from "jsonwebtoken";
 import { OAuth2Client } from "google-auth-library";
 
 let CLIENT_ID = "493157086685-icbmcv4iuv0daij5kmnhv80kipr35bq1.apps.googleusercontent.com";
-let JWT_SECRET = "DVUU2T/P9DXzCo7+AIFB9lLUgECmfMxIiWhua3JAy84=";
+const JWT_SECRET = process.env.JWT_SECRET || "DVUU2T/P9DXzCo7+AIFB9lLUgECmfMxIiWhua3JAy84=";
 
 const MONGODB_URL = process.env.MONGODB_URL || "mongodb://127.0.0.1";
 /* Be sure to use DATABASE_NAME in your call to .db(), so we can change the constant while grading. */
