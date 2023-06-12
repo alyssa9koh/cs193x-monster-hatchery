@@ -2,8 +2,6 @@ CS193X Final Project
 ====================
 
 Project Title: Monster Hatchery
-Your Name: Alyssa Koh
-Your SUNetID: a9koh
 
 Overview
 --------
