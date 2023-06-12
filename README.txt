@@ -10,11 +10,6 @@ Here, you can summon Monster eggs. After some time, they will hatch into baby mo
 You can either feed, release, or halt evolution of these monsters. After enough time and
 enough food in their bellies, they will evolve!
 
-Running
--------
-Simply run `npm install` and `npm start`.
-Do we need to load data from init_db.mongodb? Yes. This is just to initialize the correct collections.
-
 Features
 --------
 LOGIN FEATURES
